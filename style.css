@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+@media (max-width: 1023px) {
+    .for-laptop {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 1023px) {
+    .for-mobile {
+        visibility: hidden;
+    }
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    color: #112434;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #112434;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.nav li a:hover,
+.nav li a.active {
+    background: #112434;
+    color: #fff;
+    transition: .3s;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 20px;
+    width: 40%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parallax img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4em;
+    color: #112434;
+}
+
+#text-small {
+    text-decoration: none;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #112434;
+    opacity: 50%;
+    transition: .2s;
+}
+
+#text-small:hover {
+    opacity: 1;
+    transition: .2s;
+}
+
+.stars {
+    height: 100vh;
+    background: #112434;
+}
+
+.between-about-and-certificate {
+    height: 200vh;
+    background-image: linear-gradient(#112434, #54C1FF);
+}
+
+#about-me {
+    position: relative;
+    padding: 100px;
+    background: #112434;
+    height: 300vh;
+}
+
+#about-me h4 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#about-me h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+#about-me p {
+    color: #fff;
+    font-weight: 300;
+}
+
+#about-me p a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    opacity: 1;
+    transition: .4s;
+}
+
+#about-me p a:hover {
+    opacity: .5;
+    transition: .4s;
+}
+
+#about-me img {
+    border-radius: 20px;
+    height: 150px;
+}
+
+#about-me h3 {
+    margin-top: 500px;
+    font-size: 10em;
+    color: floralwhite;
+}
+
+#certificate {
+    position: relative;
+    padding: 100px;
+    background: #54C1FF;
+    height: 200vh;
+}
+
+#certificate h4 {
+    font-size: 2em;
+    color: #ffffff;
+    margin: 30px;
+}
+
+#certificate img {
+    height: 500px;
+    width: 708px;
+    border-radius: 10px;
+}
+
+#certificate .bottom-text {
+    margin-top: 300px;
+}
+
+.before-sunset {
+    height: 50vh;
+    background-color: #54C1FF;
+}
+
+#project {
+    position: relative;
+    padding: 100px;
+    background-color: #FFB267;
+    /* height: 100vh; */
+}
+
+.hover-black-w {
+    color: black;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.hover-black-w:hover {
+    color: white;
+    transition: .5s;
+}
+
+.hover-white-b {
+    color: white;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.hover-white-b:hover {
+    color: #000000;
+    transition: .5s;
+}
+
+.hover-line {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap
+}
+
+.hover-line:before {
+    background: currentColor;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 92%;
+    transform-origin: 0 50%;
+    transition: transform .5s;
+    width: 100%
+}
+
+.hover-line:hover:before {
+    transform: scaleX(0);
+    transform-origin: 100% 50%
+}
+
+.before-skills {
+    height: 100vh;
+    background-image: url(ocean-start.png);
+}
+
+#skills {
+    padding: 100px;
+    background-color: #22537A;
+    height: auto;
+}
+
+.img-underocean{
+    height: 100vh;
+    background-image: url(seakings.png);
+}
+
+.container {
+    background: #000;
+    /* width: 50%; */
+    margin: 150px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2 20px 25px rgba(58, 55, 55, 0.2);
+}
+
+@keyframes load {
+    from{
+        width: 0%;
+    }
+}
+
+@-webkit-keyframes load {
+    from{
+        width: 0%;
+    }
+}
+
+@-moz-keyframes load {
+    from{
+        width: 0%;
+    }
+}
+
+@-o-keyframes load {
+    from{
+        width: 0%;
+    }
+}
+
+.box{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box li{
+    margin-bottom: 10px;
+}
+
+.bar{
+    height: 18px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.bar::before{
+    content: "";
+    background-color: #22537A;
+    display: inline-block;
+    padding: 8px;
+    border-radius: inherit;
+    animation: load 3s 0s;
+    -webkit-animation: load 3s 0s;
+    -moz-animation: load 3s 0s;
+    -o-animation: load 3s 0s;
+}
+
+.bar.bar100::before{
+    width: calc(100% - 10px);
+}
+
+.bar.bar95::before{
+    width: calc(95% - 10px);
+}
+
+.bar.bar90::before{
+    width: calc(90% - 10px);
+}
+
+.bar.bar85::before{
+    width: calc(85% - 10px);
+}
+
+.bar.bar80::before{
+    width: calc(80% - 10px);
+}
+
+.bar.bar75::before{
+    width: calc(75% - 10px);
+}
+
+.bar.bar70::before{
+    width: calc(70% - 10px);
+}
+
+.bar.bar65::before{
+    width: calc(65% - 10px);
+}
+
+.bar.bar60::before{
+    width: calc(60% - 10px);
+}
+
+.bar.bar55::before{
+    width: calc(55% - 10px);
+}
+
+.bar.bar50::before{
+    width: calc(50% - 10px);
+}
+
+.bar.bar45::before{
+    width: calc(45% - 10px);
+}
+
+.bar.bar40::before{
+    width: calc(40% - 10px);
+}
+
+.bar.bar35::before{
+    width: calc(35% - 10px);
+}
+
+.bar.bar30::before{
+    width: calc(30% - 10px);
+}
+
+.bar.bar25::before{
+    width: calc(25% - 10px);
+}
+
+.bar.bar20::before{
+    width: calc(20% - 10px);
+}
+
+.bar.bar15::before{
+    width: calc(15% - 10px);
+}
+
+.bar.bar10::before{
+    width: calc(10% - 10px);
+}
+
+.bar.bar5::before{
+    width: calc(5% - 10px);
+}
+
+.container2 {
+    background: #000;
+    /* width: 50%; */
+    margin: 150px auto;
+    border-radius: 10px;
+    box-shadow: 2 20px 25px rgba(58, 55, 55, 0.2);
+}
+
+#contact{
+    color: #fff;
+    padding: 100px;
+    height: 50vh;
+    background-image: url(contact.png);
+}
